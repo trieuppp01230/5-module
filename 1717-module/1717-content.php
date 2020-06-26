@@ -13,16 +13,14 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 
 <div class="type-1717">
-    <!-- Main Title -->
-    <div class="title">
-        <div class="container">
+    <div class="container">
+        <!-- Main Title -->
+        <div class="title">
             <h2>Portfolio</h2>
         </div>
-    </div>
-    <!-- End Title -->
+        <!-- End Title -->
 
-    <!-- Menu -->
-    <div class="container">
+        <!-- Menu -->
         <div class="nav_menu">
             <!-- List Menu -->
             <ul class="nav_menu_list">
@@ -36,12 +34,10 @@ $url_path = str_replace('\\', '/', $url_path);
             </ul>
             <!-- End List Menu -->
         </div>
-    </div>
-    <!-- End Menu -->
+        <!-- End Menu -->
 
-    <!-- Show Product List -->
-    <section class="category">
-        <div class="container">
+        <!-- Show Product List -->
+        <div class="category">
             <div class="row category_list">
                 <!-- Product Information -->
                 <div class="col-lg-3 col-md-3 col-sm-4 col-6 category_item filter lookbook">
@@ -140,6 +136,6 @@ $url_path = str_replace('\\', '/', $url_path);
                 <!-- End Product Information -->
             </div>
         </div>
-    </section>
-    <!-- End List Product -->
+        <!-- End List Product -->
+    </div>
 </div>

@@ -16,8 +16,7 @@ $url_path = str_replace('\\', '/', $url_path);
 <div class="type-1815">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div class="col_inner">
+            <div class="col-md-3 col_inner">
                     <!-- Main Title -->
                     <h3 class="title">Browse</h3>
                     <div class="border-title"></div>
@@ -181,7 +180,7 @@ $url_path = str_replace('\\', '/', $url_path);
                         <input type="range" min="200" max="999" value="300" id="myRange">
                         <p>Price: <span id="demo"></span>.000k</p>
                     </div>
-                </div>
+               
             </div>
         </div>
     </div>

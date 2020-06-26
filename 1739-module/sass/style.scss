@@ -154,7 +154,7 @@ $background : #11519b;
         textarea {
             box-sizing: border-box;
             border: 1px $line #ddd;
-            padding: 0 .75em;
+            padding: .75em .75em;
             height: 130px;
             font-size: .97em;
             border-radius: 0;
@@ -181,8 +181,10 @@ $background : #11519b;
             color: $white;
             text-transform: uppercase;
             font-weight: bold;
+            transition: 0.4s;
             &:hover {
                 box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+                transition: 0.4s;
             }
         }
         

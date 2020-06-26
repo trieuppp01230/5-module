@@ -2,7 +2,8 @@
   font-family: 'Lato';
   color: #555555; }
   .type-1835 .col-inner {
-    padding: 20px 0px 40px 0px; }
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 80px; }
     .type-1835 .col-inner .img img {
       width: 50%;
       overflow: hidden; }
