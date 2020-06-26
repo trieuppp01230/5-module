@@ -1,0 +1,126 @@
+$primary-color: green;
+$white: #fff;
+$dark: #000;
+
+@mixin  display($display) {
+    display: $display;
+}
+@mixin font($font-size, $line-height,$font-weight) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+//Task
+.type-29 {
+    // List main menu
+    .nav-menu {
+        margin-top: 50px;
+        // Logo
+        .logo {
+            float: left;
+            img {
+                width: 230px;
+                padding-top: 17px;
+            }
+        }
+
+        //List menu
+        .menu {
+            float: right;
+            ul {
+                color: $primary-color;
+                padding: 0;
+                margin: 0;
+            }
+
+            //Main menu
+            >ul{
+                >li {
+                    float:left;
+                    @include display(inline-block);
+                    position:relative;
+                    font-size:19px;
+                    @include font(19px, 30px, 400);
+                    padding: 26px 0px;
+
+                    >a{
+                        padding:10px 15px;
+                        @include display(inline-block);
+                    }
+                }
+            }
+
+            //Main menu
+            li {
+                margin:0px;
+                list-style:none;
+                //Main menu hover
+                &:hover {
+                    &>a {
+                        color: gray;
+                    }
+                    .sub-menu {
+                        z-index:1;
+                        @include display(inline-block);
+                    }
+                }
+                //Name main menu
+                a {
+                    transition:all linear 0.15s;
+                    color:$primary-color;
+                    text-decoration:none;
+                }
+                i {
+                    padding-left: 10px;
+                }
+
+                //List sub menu
+                .sub-menu {
+                    width: 1110px;
+                    padding: 5px 0px;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    z-index: -1;
+                    @include display(inline-block);
+                    border: 1px solid;
+                    //Sub menu
+                    li {
+                        display:block;
+                        @include font(19px, 30px, 400);
+                        a {
+                            padding:10px 30px;
+                            @include display(block);
+                        }
+
+                        //Child menu
+                        .sub {
+                            //List menu children
+                            &>li {
+                                @include font(17px, 30px, 400);
+                                //Name 
+                                &>a{
+                                    color: $dark;
+                                    &:hover {
+                                        color: gray;
+                                        i {
+                                            color:gray;
+                                        }
+                                    }
+                                    &>i {
+                                        color: $primary-color;
+                                        padding-right: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
