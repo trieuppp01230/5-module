@@ -27,11 +27,12 @@ file_put_contents("css/styles.css",$style);
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/reset.css">
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/styles.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/1739.js"></script>
     </head>
     <body >
         <?php include '1739-content.php'; ?>
     </body>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/1739.js"></script>
+    
 </html>
