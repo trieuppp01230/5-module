@@ -31,6 +31,7 @@
       padding-top: 25px;
       letter-spacing: 0.7px; }
     .type-1771 .col_inner .list {
+      padding: 0;
       padding-top: 40px; }
       .type-1771 .col_inner .list_check {
         padding: 7px 0;
@@ -39,7 +40,8 @@
         color: #f1f1f1;
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.6; }
+        line-height: 1.6;
+        list-style: none; }
       .type-1771 .col_inner .list .fa-check {
         padding-right: 10px;
         color: #7a9c59; }

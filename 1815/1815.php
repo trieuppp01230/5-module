@@ -23,15 +23,14 @@ file_put_contents("css/styles.css",$style);
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/reset.css">
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/styles.css">
+        <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo $url_path ?>/css/style.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/1717.js"></script>
+        <script src="js/slider.js"></script>
     </head>
     <body >
-        <?php include '1717-content.php'; ?>
+        <?php include './1815-content.php'; ?>
     </body>
-    
-
+   
 </html>

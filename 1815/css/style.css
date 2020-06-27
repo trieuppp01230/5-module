@@ -76,8 +76,10 @@
         .type-1815 .col_inner .accordion .panel-title a:after {
           content: "\f106 "; }
     .type-1815 .col_inner .product {
+      padding: 0;
       margin-bottom: 25px; }
       .type-1815 .col_inner .product_item {
+        list-style: none;
         border-bottom: 1px solid #d1d4d8; }
         .type-1815 .col_inner .product_item .item {
           font-size: 19px;

@@ -32,7 +32,12 @@ $align : center;
         padding-bottom: 5px;
         //List Menu
         &_list {
+            padding: 0;
+            &_item:last-child {
+                margin-right: 0;
+            }
             &_item {
+                list-style: none;
                 padding-right: 10px;
                 @include font(15px, 600);
                 float: left;
@@ -81,15 +86,14 @@ $align : center;
     //Show Product List
     .category {
         padding-top: 30px;
-        &_list {
-            width: 100%;
-        }
 
         //Product Information
+        &_item:last-child {
+            margin-right: 0;
+        }
         &_item {
             width: 25%;
             float: left;
-            padding: 0px 15px;
             padding-bottom: 25px;
             text-align: $align;
             //image product

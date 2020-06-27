@@ -8,15 +8,13 @@ preg_match_all($pattern_uri, __DIR__, $matches);
 $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 
-require_once "scss.inc.php";
+require_once "libs/scss.inc.php";
 use ScssPhp\ScssPhp\Compiler;
 $scss = new Compiler();
 $sass = file_get_contents("sass/style.scss");
 $style = $scss->compile($sass);
 file_put_contents("css/styles.css",$style);
-
 ?>
-
 <!DOCTYPE html>
 <html lang="zxx">
     <head>
@@ -25,7 +23,6 @@ file_put_contents("css/styles.css",$style);
         <title>Document</title>
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo $url_path ?>/css/reset.css">
         <link rel="stylesheet" href="<?php echo $url_path ?>/css/styles.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>

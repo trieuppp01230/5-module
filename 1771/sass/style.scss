@@ -52,6 +52,7 @@ $white : #fff;
 
         //List Element
         .list {
+            padding: 0;
             padding-top: 40px;
             // Element
             &_check {
@@ -60,6 +61,7 @@ $white : #fff;
                 border-bottom: 1px solid #ececec;
                 color: $primary-color;
                 @include font(16px, 400, 1.6);
+                list-style: none;
             }
 
             //show icon
