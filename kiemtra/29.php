@@ -8,7 +8,7 @@ preg_match_all($pattern_uri, __DIR__, $matches);
 $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 
-require_once "scss.inc.php";
+require_once "libs/scss.inc.php";
 use ScssPhp\ScssPhp\Compiler;
 $scss = new Compiler();
 $sass = file_get_contents("sass/style.scss");
