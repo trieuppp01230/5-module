@@ -110,6 +110,7 @@ $white : #fff;
     }
     
     .swiper-slide {
+        width: 847px !important;
         position: relative;
         text-align: center;
         font-size: 18px;
@@ -167,6 +168,7 @@ $white : #fff;
         border-radius: 50%;
         opacity: 0;
         transition: 0.4s;
+        right: 25px;
         &:after {
             content: 'next';
             font-size: 15px;

@@ -67,6 +67,7 @@
       transition: 0.4s;
       transform: translate3d(-5px, -10px, 2px); }
   .type-1771 .swiper-slide {
+    width: 847px !important;
     position: relative;
     text-align: center;
     font-size: 18px;
@@ -115,7 +116,8 @@
     border: 1px solid black;
     border-radius: 50%;
     opacity: 0;
-    transition: 0.4s; }
+    transition: 0.4s;
+    right: 25px; }
     .type-1771 .swiper-button-next:after, .type-1771 .swiper-button-prev:after {
       content: 'next';
       font-size: 15px;
